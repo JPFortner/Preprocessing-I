@@ -1,0 +1,127 @@
+div, section {
+    // border: 1px dotted black;
+}
+
+div.upperContent {
+    display: flex;
+    .borderPage();
+    section.headerLeft {
+        border-bottom: 10px solid black;
+        nav {
+            display: flex;
+            height: fit-content;
+            justify-content: space-evenly;
+            background-color: @foregroundColor;
+            a {
+                text-decoration: none;
+                padding: 1%;
+                width: fit-content;
+                color: @backgroundColor;
+                &:hover {
+                    color: @specialHighlight;
+                }
+            }
+            // .sunmoon {
+            //     background-color: white;
+            //     position: relative;
+            //     right: 9.7%;
+            //     width: auto;
+            //     max-height: 100%;
+            //     width: 5%;
+            //     border-bottom: 3px solid black;
+            //     &:hover {
+            //         background-color: @specialHighlight;
+            //     }
+            // }
+        }
+        
+            section {
+                padding: 3%;
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                border: 3px dotted black;
+                border-radius: 2rem;
+                margin: 10%;
+                h1 {
+                    text-align: center;
+                    margin-bottom: 1%;
+                }
+                p {
+                    margin: 2%;
+                }
+            }
+        
+    }
+    section.headerRight {
+        min-width: 25%;
+        .borderHdrR();
+        img {
+            width: 100%;
+            position: relative;
+            top: 5px;
+            z-index: -1;
+        }
+    }
+}
+
+div.lowerContent {
+    display: flex;
+    .borderPage();
+    section.bodyLeft {
+        padding: 2%;
+        span {
+            img {
+                float: left;
+                border: 1px solid black;
+                border-radius: 1rem;
+                margin: 2% 2% 2% 0%;
+                max-width: 40%;
+                height: auto;
+            }
+        }
+    }
+    section.bodyRight {
+        min-width: 35%;
+        padding: 3% 0% 3% 3%;
+        div {
+            min-height: 100%;
+            padding: 7%;
+            border: 3px dotted black;
+            border-right: 0px;
+            border-bottom-left-radius: 2rem;
+            border-top-left-radius: 2rem;
+            h2 {
+                text-align: center;
+                margin-bottom: 8%;
+            }
+            ul {
+                list-style: square;
+                li {
+                    font-size: 2rem;
+                    margin: 3%;
+                    &:hover {
+                        color: @specialHighlight;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+div.copyrightStuff {
+    background-color: @foregroundColor;
+    color: @backgroundColor;
+    section {
+        text-align: center;
+        padding: 2%;
+        span {
+            font-size: 1rem;
+        }
+    }
+}
+
+span.highlightMe:hover {
+    color: @specialHighlight;
+}
